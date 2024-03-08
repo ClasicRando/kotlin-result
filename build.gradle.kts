@@ -3,7 +3,7 @@ plugins {
 }
 
 group = "com.github.clasicrando"
-version = "1.0-SNAPSHOT"
+version = "0.1"
 
 repositories {
     mavenCentral()
@@ -18,4 +18,5 @@ tasks.test {
 }
 kotlin {
     jvmToolchain(11)
+    compilerOptions.optIn.add("kotlin.contracts.ExperimentalContracts")
 }
